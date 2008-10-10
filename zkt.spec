@@ -19,6 +19,7 @@ according to RFC4641 and RFC5011.
 %setup -q -n %{name}-%{version}
 
 %build
+export PATH="$PATH:%{_sbindir}"
 
 %configure2_5x \
     --enable-configpath=/var/lib/named
