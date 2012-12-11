@@ -50,3 +50,18 @@ rm -rf %{buildroot}
 %{_bindir}/*
 %{_mandir}/man8/*
 
+
+
+%changelog
+* Mon Sep 21 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.97-2mdv2010.0
++ Revision: 446347
+- rebuild
+
+* Fri Oct 10 2008 Oden Eriksson <oeriksson@mandriva.com> 0.97-1mdv2009.1
++ Revision: 291412
+- fix build
+- import zkt
+
+
+* Fri Oct 10 2008 Oden Eriksson <oeriksson@mandriva.com> 0.97-1mdv2009.0
+- initial Mandriva package
