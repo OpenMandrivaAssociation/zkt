@@ -37,18 +37,18 @@ install -d %{buildroot}%{_bindir}
 install -d %{buildroot}%{_mandir}/man8
 
 #install -m0755 dnssec-signer %{buildroot}%{_bindir}/
-install -m0755 dnssec-zkt %{buildroot}%{_bindir}/
-install -m0755 zkt-soaserial %{buildroot}%{_bindir}/
+#install -m0755 dnssec-zkt %{buildroot}%{_bindir}/
+#install -m0755 zkt-soaserial %{buildroot}%{_bindir}/
 
-install -m0644 dnssec-signer.8 %{buildroot}%{_mandir}/man8/
-install -m0644 dnssec-zkt.8 %{buildroot}%{_mandir}/man8/
+#install -m0644 dnssec-signer.8 %{buildroot}%{_mandir}/man8/
+#install -m0644 dnssec-zkt.8 %{buildroot}%{_mandir}/man8/
 
 
 %files
 %defattr(-,root,root)
 %doc CHANGELOG LICENSE README README.logging TODO
-%{_bindir}/*
-%{_mandir}/man8/*
+#{_bindir}/*
+#{_mandir}/man8/*
 
 
 
