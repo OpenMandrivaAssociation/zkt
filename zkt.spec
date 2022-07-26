@@ -1,13 +1,14 @@
 Summary:	DNSSEC Zone Key Tool
 Name:		zkt
-Version:	0.97
-Release:	3
+Version:	1.1.4
+Release:	1
 License:	BSD-like
 Group:		Networking/Other
 URL:		http://sourceforge.net/projects/zkt
-Source0:	http://kent.dl.sourceforge.net/sourceforge/zkt/%{name}-%{version}.tar.gz
+Source0:    https://www.hznet.de/dns/zkt/zkt-%{version}.tar.gz
+# Old source
+#Source0:	http://kent.dl.sourceforge.net/sourceforge/zkt/%{name}-%{version}.tar.gz
 BuildRequires:	bind
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 DNSSEC Zone Key Tool is a toolkit written in C for DNSSEC zone and key
@@ -15,13 +16,12 @@ management. It supports automatic zone resigning and KSK- and ZSK rollover
 according to RFC4641 and RFC5011. 
 
 %prep
-
 %setup -q -n %{name}-%{version}
 
 %build
-export PATH="$PATH:%{_sbindir}"
+#export PATH="$PATH:%{_sbindir}"
 
-%configure2_5x \
+%configure \
     --enable-configpath=/var/lib/named
 
 perl -pi -e "s|^#define BIND_VERSION .*|#define BIND_VERSION 940|g" config.h
@@ -41,8 +41,6 @@ install -m0755 zkt-soaserial %{buildroot}%{_bindir}/
 install -m0644 dnssec-signer.8 %{buildroot}%{_mandir}/man8/
 install -m0644 dnssec-zkt.8 %{buildroot}%{_mandir}/man8/
 
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
