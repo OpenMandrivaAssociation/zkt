@@ -47,8 +47,7 @@ install -m0755 zkt-keyman %{buildroot}%{_bindir}/
 
 
 %files
-%defattr(-,root,root)
-%doc CHANGELOG LICENSE README README.logging TODO
+%doc CHANGELOG LICENSE README.logging TODO
 #{_bindir}/*
 #{_mandir}/man8/*
 
