@@ -33,8 +33,8 @@ make OPTIM="%{optflags}"
 %install
 %make_install
 
-install -d %{buildroot}%{_bindir}
-install -d %{buildroot}%{_mandir}/man8
+#install -d %{buildroot}%{_bindir}
+#install -d %{buildroot}%{_mandir}/man8
 
 #install -m0755 dnssec-signer %{buildroot}%{_bindir}/
 #install -m0755 dnssec-zkt %{buildroot}%{_bindir}/
