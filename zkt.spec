@@ -1,3 +1,5 @@
+%global optflags %{optflags} -fcommon
+
 Summary:	DNSSEC Zone Key Tool
 Name:		zkt
 Version:	1.1.4
