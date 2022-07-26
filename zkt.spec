@@ -36,7 +36,7 @@ rm -rf %{buildroot}
 install -d %{buildroot}%{_bindir}
 install -d %{buildroot}%{_mandir}/man8
 
-install -m0755 dnssec-signer %{buildroot}%{_bindir}/
+#install -m0755 dnssec-signer %{buildroot}%{_bindir}/
 install -m0755 dnssec-zkt %{buildroot}%{_bindir}/
 install -m0755 zkt-soaserial %{buildroot}%{_bindir}/
 
