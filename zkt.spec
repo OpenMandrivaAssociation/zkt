@@ -31,7 +31,7 @@ perl -pi -e "s|^#define BIND_VERSION .*|#define BIND_VERSION 940|g" config.h
 make OPTIM="%{optflags}"
 
 %install
-rm -rf %{buildroot}
+%make_install
 
 install -d %{buildroot}%{_bindir}
 install -d %{buildroot}%{_mandir}/man8
