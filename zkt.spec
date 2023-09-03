@@ -2,7 +2,7 @@
 
 Summary:	DNSSEC Zone Key Tool
 Name:		zkt
-Version:	1.1.5
+Version:	1.1.6
 Release:	1
 License:	BSD-like
 Group:		Networking/Other
