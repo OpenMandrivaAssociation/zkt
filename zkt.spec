@@ -6,7 +6,7 @@ Version:	1.1.6
 Release:	1
 License:	BSD-like
 Group:		Networking/Other
-URL:		http://sourceforge.net/projects/zkt
+URL:		https://sourceforge.net/projects/zkt
 Source0:    https://www.hznet.de/dns/zkt/zkt-%{version}.tar.gz
 # Old source
 #Source0:	http://kent.dl.sourceforge.net/sourceforge/zkt/%{name}-%{version}.tar.gz
