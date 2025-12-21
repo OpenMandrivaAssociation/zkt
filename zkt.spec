@@ -10,6 +10,11 @@ URL:		https://sourceforge.net/projects/zkt
 Source0:    https://www.hznet.de/dns/zkt/zkt-%{version}.tar.gz
 # Old source
 #Source0:	http://kent.dl.sourceforge.net/sourceforge/zkt/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	bind
 
 %description
